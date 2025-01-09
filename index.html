@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Calculation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Enter Start and Destination</h1>
+    <form action="/calculate_route" method="POST">
+        <label for="start">Start Location:</label>
+        <input type="text" id="start" name="start" required>
+        <br><br>
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required>
+        <br><br>
+        <input type="submit" value="Calculate Route">
+    </form>
+</body>
+</html>
